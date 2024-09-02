@@ -65,7 +65,7 @@ class TransactionResource extends Resource
                     ->label('Nama Transaksi')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('amount')
-                    ->label('Total Pengeluaran')
+                    ->label('Jumlah')
                     ->prefix('Rp ')
                     ->money('IDR')
                     ->numeric()
