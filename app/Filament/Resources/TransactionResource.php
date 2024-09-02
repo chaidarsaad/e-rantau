@@ -32,7 +32,7 @@ class TransactionResource extends Resource
                     ->required()
                     ->columnSpanFull(),
                 Forms\Components\TextInput::make('amount')
-                    ->label('Total Pengeluaran')
+                    ->label('Jumlah')
                     ->prefix('Rp')
                     ->required()
                     ->numeric(),
