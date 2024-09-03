@@ -37,9 +37,9 @@ class StatsOverview extends BaseWidget
         $saldo = $totalIncome - $totalExpense;
 
         return [
-            Stat::make('Total Pemasukan', $totalIncome),
-            Stat::make('Total Pengeluaran', $totalExpense),
-            Stat::make('Total Saldo', $saldo),
+            Stat::make('Total Pemasukan', number_format($totalIncome)),
+            Stat::make('Total Pengeluaran', number_format($totalExpense)),
+            Stat::make('Total Saldo', number_format($saldo)),
         ];
     }
 }
